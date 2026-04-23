@@ -1,46 +1,9 @@
 
+@extends('layouts.app')
 
-<header class="bg-[#4e2e7f] text-white">
-    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-        <div class="flex items-center space-x-3">
-            <div class="bg-yellow-400 w-10 h-10 rounded-br-2xl rounded-tl-2xl flex items-center justify-center relative">
-                <div class="w-4 h-4 border-2 border-white transform rotate-45 rounded-tl-full rounded-br-full"></div>
-            </div>
-            <div class="leading-tight">
-                <div class="font-bold text-xl leading-none tracking-wide">SCB</div>
-                <div class="text-[13px]">ไทยพาณิชย์</div>
-            </div>
-        </div>
-        <div class="text-xl font-bold tracking-widest text-gray-200">EASY NET</div>
-    </div>
+@section('content')
 
-    <div class="bg-[#9d81bb] px-4 pt-2">
-        <div class="flex space-x-1 overflow-x-auto items-end">
-            <button class="bg-[#c4b3d8] text-white hover:bg-[#8369a3] px-4 py-2 rounded-t-md text-sm whitespace-nowrap">My Account</button>
-            <button class="bg-[#c4b3d8] text-white hover:bg-[#8369a3] px-4 py-2 rounded-t-md text-sm whitespace-nowrap text-center leading-tight">Fund <br>Transfer</button>
-            <button class="bg-[#c4b3d8] text-white hover:bg-[#8369a3] px-4 py-2 rounded-t-md text-sm whitespace-nowrap text-center leading-tight">Payment <br>& E-bill</button>
-            <button class="bg-[#4e2e7f] text-white px-4 py-3 rounded-t-md text-sm font-medium whitespace-nowrap text-center leading-tight shadow-md">Card <br>Services</button>
-            <button class="bg-[#c4b3d8] text-white hover:bg-[#8369a3] px-4 py-2 rounded-t-md text-sm whitespace-nowrap">SMS Alert</button>
-            <button class="bg-[#c4b3d8] text-white hover:bg-[#8369a3] px-4 py-2 rounded-t-md text-sm whitespace-nowrap text-center">Investment</button>
-            <button class="bg-[#c4b3d8] text-white hover:bg-[#8369a3] px-4 py-2 rounded-t-md text-sm whitespace-nowrap text-center">Production</button>
-            <button class="bg-[#c4b3d8] text-white hover:bg-[#8369a3] px-4 py-2 rounded-t-md text-sm whitespace-nowrap text-center">Other Services</button>
-            <button class="bg-[#c4b3d8] text-white hover:bg-[#8369a3] px-4 py-2 rounded-t-md text-sm whitespace-nowrap text-center">Setting</button>
-        </div>
-    </div>
 
-    <div class="bg-[#3b2361] px-10 py-1.5 flex space-x-6 text-sm border-t border-[#6b4e9c]">
-        <span class="cursor-pointer border-r border-white pr-6 hover:underline">Account Details</span>
-        <span class="cursor-pointer hover:underline">Account Summary</span>
-    </div>
-</header>
-
-<div class="bg-white border-b flex justify-end items-center px-4 py-1.5 space-x-4">
-    <div class="flex items-center space-x-3 border-r pr-4">
-        <img src="https://ui-avatars.com/api/?name=Siriyada+Puttanon&background=random" class="w-9 h-9 rounded-full border border-gray-300" alt="User Profile">
-        <span class="text-[#4e2e7f] text-sm font-medium">Mrs Siriyada Puttanon</span>
-    </div>
-    <button class="text-xs font-bold border px-3 py-1 bg-gray-50 border-gray-300 shadow-sm rounded hover:bg-gray-100">Log out</button>
-</div>
 
 <div class="flex mx-auto bg-white min-h-[700px]">
     <main class="flex-1 p-8 pr-16">
@@ -124,3 +87,6 @@
         <p>should you any inquiries concerning our services please contact SCB Via Email Address at <a href="mailto:siamcommercialbank03@gmail.com" class="text-[#3b2361] hover:underline">siamcommercialbank03@gmail.com</a></p>
     </aside>
 </div>
+
+
+@endsection

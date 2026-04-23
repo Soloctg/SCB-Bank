@@ -2,59 +2,7 @@
 
 @section('content')
 
-    <header class="bg-[#4e2e7f] text-white">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center space-x-3">
-                <div class="bg-yellow-400 w-10 h-10 rounded-br-2xl rounded-tl-2xl"></div>
-                <div class="leading-tight">
-                    <div class="font-bold text-xl leading-none">SCB</div>
-                    <div class="text-xs">ไทยพาณิชย์</div>
-                </div>
-            </div>
-            <div class="text-xl font-medium tracking-widest">EASY NET</div>
-        </div>
 
-        <div class="bg-[#9d81bb] px-4 pt-2">
-            <div class="flex space-x-1 overflow-x-auto">
-                <button class="bg-[#4e2e7f] text-white px-4 py-2 rounded-t-md text-sm whitespace-nowrap">My Account</button>
-                <button class="hover:bg-[#8369a3] px-4 py-2 rounded-t-md text-sm whitespace-nowrap">Fund Transfer</button>
-                <button class="hover:bg-[#8369a3] px-4 py-2 rounded-t-md text-sm whitespace-nowrap text-center">Payment <br>& E-bill</button>
-                <button class="hover:bg-[#8369a3] px-4 py-2 rounded-t-md text-sm whitespace-nowrap">
-                    <a class="nav-link" href="{{-- route('card-services') --}}">{{ __('Card Services') }}</a>
-
-                </button>
-                <button class="hover:bg-[#8369a3] px-4 py-2 rounded-t-md text-sm whitespace-nowrap">SMS Alert</button>
-                <button class="hover:bg-[#8369a3] px-4 py-2 rounded-t-md text-sm whitespace-nowrap text-center">Investment</button>
-            </div>
-        </div>
-
-        <div class="bg-[#3b2361] px-10 py-1 flex space-x-6 text-xs border-t border-[#6b4e9c]">
-            <span class="cursor-pointer border-r border-white pr-6">Account Details</span>
-            <span class="cursor-pointer">Account Summary</span>
-        </div>
-    </header>
-
-    <div class="bg-white border-b flex justify-end items-center px-4 py-1 space-x-4">
-        <div class="flex items-center space-x-2 border-r pr-4">
-            <img src="https://ui-avatars.com/api/?name=Siriyada+Puttanon&background=random" class="w-10 h-10 rounded-full border border-gray-300" alt="User">
-            <span class="text-[#4e2e7f] text-sm font-medium">Mrs Siriyada Puttanon</span>
-        </div>
-
-        <button class="text-xs font-bold border px-2 py-1 rounded hover:bg-gray-100">
-
-            <a class="dropdown-item" href="{{ route('logout') }}"
-               onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                {{ __('Log out') }}
-            </a>
-
-            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                @csrf
-            </form>
-        </button>
-
-
-    </div>
 
     <div class="flex min-h-screen">
         <main class="flex-1 bg-white p-8">

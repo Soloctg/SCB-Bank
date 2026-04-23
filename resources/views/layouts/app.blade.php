@@ -23,7 +23,8 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>
-    <div className="app">
+    <div id="app">
+        @include('layouts.navigation')
 
 
         <main class="">
