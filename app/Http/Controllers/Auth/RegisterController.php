@@ -65,6 +65,12 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+
+            // Custom fields added below
+            'role'       => 'user', // Default role
+            'is_active'  => 1,      // Automatically activate new users
+            'balance'    => 0.00,   // Starting balance
+            'account'    => mt_rand(1000000000, 9999999999),
         ]);
     }
 }

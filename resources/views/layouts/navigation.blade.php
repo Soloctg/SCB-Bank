@@ -31,6 +31,12 @@
             <button class="bg-[#c4b3d8] text-white hover:bg-[#8369a3] px-4 py-2 rounded-t-md text-sm whitespace-nowrap">SMS Alert</button>
             <button class="bg-[#c4b3d8] text-white hover:bg-[#8369a3] px-4 py-2 rounded-t-md text-sm whitespace-nowrap text-center">Investment</button>
             <button class="bg-[#c4b3d8] text-white hover:bg-[#8369a3] px-4 py-2 rounded-t-md text-sm whitespace-nowrap text-center">Setting</button>
+
+            @admin
+                <button class="bg-[#c4b3d8] text-white hover:bg-[#8369a3] px-4 py-2 rounded-t-md text-sm whitespace-nowrap text-center">
+                    <a href="/admin/users" class="text-red-500">Manage Users</a>
+                </button>
+            @endadmin
         </div>
     </div>
 
@@ -42,9 +48,15 @@
 
 <div class="bg-white border-b flex justify-end items-center px-4 py-1.5 space-x-4">
     <div class="flex items-center space-x-3 border-r pr-4">
-        <img src="https://ui-avatars.com/api/?name=Siriyada+Puttanon&background=random" class="w-9 h-9 rounded-full border border-gray-300" alt="User Profile">
-        <span class="text-[#4e2e7f] text-sm font-medium">Mrs Siriyada Puttanon</span>
+        <!--<img src="https://ui-avatars.com/api/?name=Siriyada+Puttanon&background=random" class="w-9 h-9 rounded-full border border-gray-300" alt="User Profile">-->
+        <img src="{{ Auth::user()->image ? asset('storage/' . Auth::user()->image) : 'https://ui-avatars.com/api/?name=' . urlencode(Auth::user()->name) }}"
+             class="w-9 h-9 rounded-full border-4 border-[#d1c4e9] object-cover mb-2">
+
+        {{-- asset('storage/' . Auth::user()->$user->image) --}}
+
+        <span class="text-[#4e2e7f] text-sm font-medium">{{ Auth::user()->name }}</span>
     </div>
+
 
     <button class="text-xs font-bold border px-2 py-1 rounded hover:bg-gray-100">
 

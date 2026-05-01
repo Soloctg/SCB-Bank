@@ -29,11 +29,11 @@
                         <div class="w-12 h-8 bg-gray-400 rounded-md opacity-50 shadow-sm"></div>
                         <div>
                             <p class="font-bold text-gray-700">Savings</p>
-                            <p class="text-sm text-gray-600">278-237191-5</p>
+                            <p class="text-sm text-gray-600">{{-- auth()->user()->account --}}278-237191-5</p>
                         </div>
                     </div>
                     <div class="text-right">
-                        <span class="text-4xl font-light text-gray-800">958,000,000</span>
+                        <span class="text-4xl font-light text-gray-800">{{ number_format(auth()->user()->balance, 2) }}{{--958,000,000--}}</span>
                         <span class="text-xl ml-2 text-gray-600">บาทไทย</span>
                     </div>
                 </div>

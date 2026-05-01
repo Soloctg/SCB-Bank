@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.front')
 
 @section('content')
     <div class="min-h-screen bg-gray-100 flex flex-col items-center pt-10">
